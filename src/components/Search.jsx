@@ -3,9 +3,9 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 const Search = () => {
 return (
     <div className="w-[100%]">
-      <div className="flex items-center h-8 bg-miniAmazon-yellow rounded">
+      <div className="flex items-center h-10 bg-miniAmazon-yellow rounded">
         <select
-          className="p-[7px] rounded-l text-black border text-xs xl:text-sm"
+          className="p-[11px] pe-[0px] rounded-l text-black border text-xs xl:text-sm"
         >
           <option>All</option>
           <option>Deals</option>
@@ -16,8 +16,8 @@ return (
           <option>Mobiles</option>
         </select>
         <input
-          className="flex grow items-center h-[100%] text-black py-1"
-          placeholder="  Search Amazon.in"
+          className="flex grow items-center h-[100%] text-black p-4"
+          placeholder="Search Amazon.in"
           type="text"
         />
         <button className="w-[45px]">

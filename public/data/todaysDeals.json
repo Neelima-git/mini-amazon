@@ -1,0 +1,14 @@
+{
+    "0": {
+        "id": 0,
+        "description": "Exclusive Deals on Gold Coins | Bangalore Refinery, Malabar Gold and more",
+        "img": "../images/home_grid_1.jpg",
+        "discount": "Up to 7% off"
+    },
+    "1": {
+        "id": 1,
+        "description": "Bata, Hush Puppies & more",
+        "img": "../images/home_grid_1.jpg",
+        "discount": "Up to 32% off"
+    }
+}

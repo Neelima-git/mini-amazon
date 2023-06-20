@@ -2,6 +2,7 @@ import {
   Carousel,
   CarouselCategory,
   CarouselProduct,
+  CarouselTodaysDeals,
   HomePageCard,
 } from "./index";
 
@@ -29,7 +30,7 @@ let cardsData = [
   {
     title: "Shop Pet Supplies",
     img: "../images/home_grid_5.jpg",
-    link: "See more"
+    link: "See more",
   },
   {
     title: "Spring Sale",
@@ -54,19 +55,18 @@ const HomePage = () => {
       <div className="min-w-[1000px] max-w[1500px] m-auto">
         <Carousel />
         <div className="grid grid-cols-3 xl:grid-cols-4 -mt-80">
-          {
-            cardsData.map((data) => {
-              return (
-                <HomePageCard
+          {cardsData.map((data) => {
+            return (
+              <HomePageCard
+                key={data.title}
                 title={data.title}
                 img={data.img}
                 link={data.link}
               />
-              )
-            })
-          }
-
+            );
+          })}
         </div>
+        <CarouselTodaysDeals/>
         <CarouselCategory />
         <CarouselProduct />
       </div>

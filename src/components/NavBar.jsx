@@ -51,7 +51,7 @@ const NavBar = () => {
       <div className="flex bg-miniAmazon-light_blue text-white space-x-3 text-xs xl:text-sm p-2 px-3 pl-6 items-center">
         <div className="sideNavigation flex items-center">
           <div>
-            <Bars3Icon class="h-6" />
+            <Bars3Icon className="h-6" />
           </div>
           <div className="font-bold">All</div>
         </div>
