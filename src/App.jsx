@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage, NavBar, SearchResults, ProductPage, Checkout } from "./components";
+import { HomePage, NavBar, SearchResults, ProductPage, Checkout, Footer } from "./components";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

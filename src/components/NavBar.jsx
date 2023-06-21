@@ -8,7 +8,7 @@ import { Search } from "./";
 const NavBar = () => {
   return (
     <header className="min-w-[1000px]">
-      <div className="flex bg-miniAmazon text-white h-[60px]">
+      <div className="flex sticky bg-miniAmazon text-white h-[60px]">
         {/* Left */}
         <div className="flex items-center m-4">
           <img
@@ -65,10 +65,7 @@ const NavBar = () => {
         <div>Electronics</div>
         <div>Prime</div>
         <div>Home & Kitchen</div>
-        <div>Amazon Pay</div>
-        <div>Fashion</div>
-        <div>Computers</div>
-        <div>Gift Ideas</div>
+        {/* <div className="justify-self-end"><img src="../images/download_app.jpg" alt="Download app" /></div> */}
       </div>
     </header>
   );
