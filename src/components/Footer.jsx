@@ -68,7 +68,7 @@ const Footer = () => {
         <div className=" divide-y divide-slate-200"><div></div></div>
       </div>
       {/* End footer */}
-      <div className="bg-miniAmazon-light_blue text-gray-300 flex space-x-4 text-sm justify-center max-width-[50%">
+      <div className="bg-miniAmazon-light_blue text-gray-300 flex space-x-4 text-sm justify-center min-w-[50%]">
       {countries.map((country, index) => (
         <p key={index}>{country}</p>
       ))}
