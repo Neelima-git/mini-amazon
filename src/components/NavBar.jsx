@@ -4,6 +4,7 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 import { Search } from "./";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -11,11 +12,13 @@ const NavBar = () => {
       <div className="flex sticky bg-miniAmazon text-white h-[60px]">
         {/* Left */}
         <div className="flex items-center m-4">
-          <img
-            className="h-[35px] w-[100px] m-2"
-            src={"../images/amazon.png"}
-            alt="Amazon logo"
-          />
+          <Link to={"/"}>
+            <img
+              className="h-[35px] w-[100px] m-2"
+              src={"../images/amazon.png"}
+              alt="Amazon logo"
+            />
+          </Link>
           <div className="flex pr-4 pl-4">
             <div className="self-end pb-1">
               <MapPinIcon className="h-6" />
@@ -42,10 +45,12 @@ const NavBar = () => {
             <div className="text-xs xl:text-sm">Returns</div>
             <div className="text-sm xl:text-base font-bold">& Orders</div>
           </div>
+          <Link to={"/checkout"}>
           <div className="flex pr-3 pl-3">
             <ShoppingCartIcon className="h-[48px]" />
             <div className="mt-7 text-xs xl:text-sm font-bold">Cart</div>
           </div>
+          </Link>
         </div>
       </div>
       <div className="flex bg-miniAmazon-light_blue text-white space-x-3 text-xs xl:text-sm p-2 px-3 pl-6 items-center">

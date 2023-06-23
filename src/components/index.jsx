@@ -12,3 +12,4 @@ export { default as CarouselTodaysDeals } from "./CarouselTodaysDeals";
 export { default as ProductDetails } from "./ProductDetails"
 export { default as Footer }from './Footer'
 export { default as ProductBadge } from './ProductBadge'
+export { default as ProductRatings } from './ProductRatings'

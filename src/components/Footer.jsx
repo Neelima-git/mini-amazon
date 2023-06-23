@@ -65,14 +65,15 @@ const Footer = () => {
             <p>Help</p>
           </div>
         </div>
-        <div className=" divide-y divide-slate-200"><div></div></div>
       </div>
       {/* End footer */}
-      <div className="bg-miniAmazon-light_blue text-gray-300 flex space-x-4 text-sm justify-center min-w-[50%]">
-      {countries.map((country, index) => (
-        <p key={index}>{country}</p>
-      ))}
-      </div>
+      {/* <div className=" divide-y divide-gray-400 min-w-[400px]">
+        <div className="bg-miniAmazon-light_blue text-gray-300 flex space-x-4 text-sm justify-center">
+          {countries.map((country, index) => (
+            <p key={index}>{country}</p>
+          ))}
+        </div>
+      </div> */}
     </div>
   );
 };
