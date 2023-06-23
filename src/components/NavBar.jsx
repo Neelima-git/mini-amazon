@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <header className="min-w-[1000px]">
-      <div className="flex sticky bg-miniAmazon text-white h-[60px]">
+      <div className="flex bg-miniAmazon text-white h-[60px]">
         {/* Left */}
         <div className="flex items-center m-4">
           <Link to={"/"}>
