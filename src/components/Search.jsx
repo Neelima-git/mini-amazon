@@ -24,15 +24,15 @@ const Search = () => {
     setCategory("All");
   };
 
-  const getSuggestion = () => {
+  const getSuggestions = () => {
     callAPI(`data/suggestions.json`)
-    .then((suggestionsResults) => {
-      setSuggestions(suggestionsResults)
+    .then((suggestionResults) => {
+      setSuggestions(suggestionResults)
     })
   };
 
   useEffect(() => {
-    getSuggestion();
+    getSuggestions();
   },  [])
 
 return (

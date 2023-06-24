@@ -1,12 +1,16 @@
-import { useParams} from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ProductDetails } from "./";
 import { IN_CURRENCY } from "../utils/constants";
 import { callAPI } from "../utils/CallApi";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
 
 const ProductPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState("1")
+  const dispatch = useDispatch();
 
   const getProduct = () => {
     callAPI(`data/products.json`).then((productResults) => {
@@ -14,6 +18,10 @@ const ProductPage = () => {
     });
   };
 
+  const addQuantityToProduct = () => {
+    setProduct((product.quantity = quantity));
+    return product;
+  };
 
   useEffect(() => {
     getProduct();
@@ -41,8 +49,15 @@ const ProductPage = () => {
             </div>
             {/* Right */}
             <div className="col-span-2 p-4 rounded bg-white">
-              <div className="text-xl xl:text-2xl text-red-700 text-right font-semibold">{IN_CURRENCY.format(product.price)}</div>
-              <div className="text-base xl:text-lg text-gray-500 text-right">M.R.P <span className="line-through" >{IN_CURRENCY.format(product.oldPrice)}</span> </div>
+              <div className="text-xl xl:text-2xl text-red-700 text-right font-semibold">
+                {IN_CURRENCY.format(product.price)}
+              </div>
+              <div className="text-base xl:text-lg text-gray-500 text-right">
+                M.R.P
+                <span className="line-through">
+                  {IN_CURRENCY.format(product.oldPrice)}
+                </span>{" "}
+              </div>
               <div className="text-sm xl:text-base text-blue-500 font-semibold mt-3">
                 FREE Returns
               </div>
@@ -63,7 +78,11 @@ const ProductPage = () => {
                   <option>3</option>
                 </select>
               </div>
-              <button className="bg-yellow-400 w-full p-3 text- xl:text-sm rounded hover:bg-yellow-500 mt-3">Add to Cart</button>
+              <Link to={"/checkout"}>
+              <button onClick={() => dispatch(addToCart(addQuantityToProduct()))} className="btn">
+                Add to Cart
+              </button>
+              </Link>
             </div>
           </div>
         </div>
