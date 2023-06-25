@@ -70,7 +70,7 @@ const Checkout = () => {
             <div className="text-xs xl:text-sm text-green-800 mb-2" >Your order qualifies for <span className="font-bold" >FREE DELIVERY</span> .Delivery Details </div>
             <div className="text-base xl:text-lg mb-4 mr-4" >Subtotal ( {itemsNumber} items): <span className="font-semibold" > { IN_CURRENCY.format(subTotal) } </span>    
             </div>
-            <button className="btn" >Proceed to Checkout</button>
+            <button className="btn" >Proceed to Buy</button>
           </div>
           
         </div>

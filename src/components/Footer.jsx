@@ -23,6 +23,9 @@ const Footer = () => {
 
   return (
     <div>
+      <div>
+        <p className="bg-gray-700 text-slate-200 flex justify-center py-4 text-sm xl:text-base">Back to top</p>
+      </div>
       {/* Middle Footer */}
       <div className="flex row bg-miniAmazon-light_blue text-white justify-evenly py-12">
         <div className="col col-span-4">

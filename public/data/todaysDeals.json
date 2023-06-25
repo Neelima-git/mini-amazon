@@ -1,14 +1,68 @@
 {
     "0": {
         "id": 0,
-        "description": "Exclusive Deals on Gold Coins | Bangalore Refinery, Malabar Gold and more",
-        "img": "../images/home_grid_1.jpg",
-        "discount": "Up to 7% off"
+        "description": "Bata, Hush Puppies & more",
+        "img": "../images/deal_1.jpg",
+        "discount": "Up to 31% off"
     },
     "1": {
         "id": 1,
-        "description": "Bata, Hush Puppies & more",
-        "img": "../images/home_grid_1.jpg",
-        "discount": "Up to 32% off"
+        "description": "Starting 299- ASIAN Footwear Collection",
+        "img": "../images/deal_2.jpg",
+        "discount": "Up to 87% off"
+    },
+    "2": {
+        "id": 2,
+        "description": "Deals on RED TAPE",
+        "img": "../images/deal_3.jpg",
+        "discount":"Up to 80% off"
+    },
+    "3": {
+        "id": 3,
+        "description": "Exclusive Deals on Gold Coins",
+        "img": "../images/deal_4.jpg",
+        "discount":"Up to 8% off"
+    },
+    "4": {
+        "id": 4,
+        "description": "Starting 149-ASIAN Footware collection",
+        "img": "../images/deal_5.jpg",
+        "discount":"Up to 58% off"
+    },
+    "5": {
+        "id": 5,
+        "description": "Premium DOTD",
+        "img": "../images/deal_6.jpg",
+        "discount":"Up to 31% off"
+    },
+    "6": {
+        "id": 6,
+        "description": "Wallpapers from wolpin",
+        "img": "../images/deal_7.jpg",
+        "discount":"Up to 87% off"
+    },
+    "7": {
+        "id": 7,
+        "description": "Min 50% OFF on PUMA",
+        "img": "../images/deal_8.jpg",
+        "discount":"Up to 50% off"
+    },
+    "8": {
+        "id": 8,
+        "description": "WaterScience best deals Bath Faucets Water Purifiers and Accessories",
+        "img": "../images/deal_9.jpg",
+        "discount":"Up to 26% off"
+    },
+    "9": {
+        "id": 9,
+        "description": "Best Selling Toys from Tec Tavakkal",
+        "img": "../images/deal_10.jpg",
+        "discount":"Up to 77% off"
+    },
+    "10": {
+        "id": 10,
+        "description": "Best offers on The Man company Fragrance range",
+        "img": "../images/deal_11.jpg",
+        "discount":"Up to 60% off"
     }
 }
