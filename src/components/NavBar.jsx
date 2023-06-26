@@ -60,8 +60,8 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
-      <div className="flex bg-miniAmazon-light_blue text-white space-x-3 text-xs xl:text-sm p-2 px-3 pl-6 items-center">
-        <div className="sideNavigation flex items-center">
+      <div className="flex bg-miniAmazon-light_blue text-white space-x-3 text-s xl:text-base p-2 px-3 pl-6 items-center">
+        <div className="sideNavigation flex items-center me-2">
           <div>
             <Bars3Icon className="h-6" />
           </div>
@@ -77,7 +77,14 @@ const NavBar = () => {
         <div>Electronics</div>
         <div>Prime</div>
         <div>Home & Kitchen</div>
-        {/* <div className="justify-self-end"><img src="../images/download_app.jpg" alt="Download app" /></div> */}
+        <div className="flex items-center justify-end flex-grow">
+          <div className="ml-auto">
+            <img
+              src="../images/download_app.jpg"
+              alt="Download app"
+            />
+          </div>
+        </div>
       </div>
     </header>
   );

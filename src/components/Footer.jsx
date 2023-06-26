@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
   const countries = [
@@ -21,12 +22,22 @@ const Footer = () => {
     "United States",
   ];
 
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({ smooth: true });
+  };
+
   return (
     <div>
       <div>
-        <p className="bg-gray-700 text-slate-200 flex justify-center py-4 text-sm xl:text-base">Back to top</p>
+        <button
+          className="bg-gray-700 text-slate-200 flex justify-center py-4 text-sm xl:text-base w-full"
+          onClick={handleScrollToTop}
+        >
+          Back to top
+        </button>
       </div>
-      {/* Middle Footer */}
+      <div className="divide-y divide-slate-700">
+              {/* Middle Footer */}
       <div className="flex row bg-miniAmazon-light_blue text-white justify-evenly py-12">
         <div className="col col-span-4">
           <p className="font-bold text-lg">Get to Know Us</p>
@@ -69,14 +80,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* End footer */}
-      {/* <div className=" divide-y divide-gray-400 min-w-[400px]">
-        <div className="bg-miniAmazon-light_blue text-gray-300 flex space-x-4 text-sm justify-center">
-          {countries.map((country, index) => (
-            <p key={index}>{country}</p>
-          ))}
-        </div>
-      </div> */}
+      {/* Middle footer 2*/}
+      <div className="bg-miniAmazon-light_blue text-gray-300 text-sm py-8 ">
+      <div className="min-w-[600px] mx-auto flex justify-center space-x-4 flex-wrap">
+            {countries.map((country, index) => (
+              <p key={index}>{country}</p>
+            ))}
+          </div>
+      </div>
+      </div>
     </div>
   );
 };

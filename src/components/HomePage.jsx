@@ -1,6 +1,5 @@
 import {
   Carousel,
-  CarouselCategory,
   CarouselProduct,
   CarouselTodaysDeals,
   HomePageCard,
@@ -67,7 +66,6 @@ const HomePage = () => {
           })}
         </div>
         <CarouselTodaysDeals/>
-        <CarouselCategory />
         <CarouselProduct />
       </div>
     </div>

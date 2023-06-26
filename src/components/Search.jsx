@@ -12,42 +12,48 @@ const Search = () => {
   const onHandleSubmit = (e) => {
     e.preventDefault();
 
-    navigate({
-      pathname: "search",
-      search: `${createSearchParams({
-        category: `${category}`,
-        searchTerm: `${searchTerm}`,
-      })}`,
-    });
+    if (category === "All") {
+      // Navigate to home page
+      navigate("/");
+    } else {
+      // Navigate to search results page with category and search term
+      navigate({
+        pathname: "search",
+        search: `${createSearchParams({
+          category: `${category}`,
+          searchTerm: `${searchTerm}`,
+        })}`,
+      });
+    }
 
     setSearchTerm("");
     setCategory("All");
   };
 
   const getSuggestions = () => {
-    callAPI(`data/suggestions.json`)
-    .then((suggestionResults) => {
-      setSuggestions(suggestionResults)
-    })
+    callAPI(`data/suggestions.json`).then((suggestionResults) => {
+      setSuggestions(suggestionResults);
+    });
   };
 
   useEffect(() => {
     getSuggestions();
-  },  [])
+  }, []);
 
-return (
+  return (
     <div className="w-[100%]">
       <div className="flex items-center h-10 bg-miniAmazon-yellow rounded">
         <select
-        onChange={(e) => setCategory(e.target.value)}
+          onChange={(e) => setCategory(e.target.value)}
           className="p-[11px] pe-[0px] rounded-l text-black border text-xs xl:text-sm"
         >
           <option>All</option>
-          <option>Deals</option>
           <option>Amazon</option>
           <option>Fashion</option>
           <option>Computers</option>
+          <option>Beauty</option>
           <option>Home</option>
+          <option>Furniture</option>
           <option>Mobiles</option>
         </select>
         <input
