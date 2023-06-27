@@ -87,27 +87,27 @@ const Checkout = () => {
               );
             })}
             <div className="text-lg xl:text-xl text-right mb-4 mr-4">
-              Subtotal ( {itemsNumber} items):{" "}
+              Subtotal ( {itemsNumber} items):
               <span className="font-semibold">
-                {" "}
-                {IN_CURRENCY.format(subTotal)}{" "}
+                {IN_CURRENCY.format(subTotal)}
               </span>
             </div>
           </div>
           {/*Checkout*/}
           <div className="col-span-2 bg-white rounded h-[250px] p-2">
             <div className="text-xs xl:text-sm text-green-800 mb-2">
-              Your order qualifies for{" "}
-              <span className="font-bold">FREE DELIVERY</span> .Delivery Details{" "}
+              Your order qualifies for
+              <span className="font-bold">FREE DELIVERY</span> .Delivery Details
             </div>
             <div className="text-base xl:text-lg mb-4 mr-4">
-              Subtotal ( {itemsNumber} items):{" "}
+              Subtotal ( {itemsNumber} items):
               <span className="font-semibold">
-                {" "}
-                {IN_CURRENCY.format(subTotal)}{" "}
+                {IN_CURRENCY.format(subTotal)}
               </span>
             </div>
-            <button className="btn">Proceed to Buy</button>
+            <Link to={`/billing?subtotal=${subTotal}`}>
+              <button className="btn">Proceed to Buy</button>
+            </Link>
           </div>
         </div>
       </div>

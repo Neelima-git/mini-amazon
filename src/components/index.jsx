@@ -12,3 +12,4 @@ export { default as ProductDetails } from "./ProductDetails"
 export { default as Footer }from './Footer'
 export { default as ProductBadge } from './ProductBadge'
 export { default as ProductRatings } from './ProductRatings'
+export { default as Billing } from './Billing'

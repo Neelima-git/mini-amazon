@@ -71,7 +71,7 @@ const ProductPage = () => {
                 Quantity:
                 <select
                   onChange={(e) => setQuantity(e.target.value)}
-                  className="p-2 bg-white border rounded-md focus:border-indigo-600"
+                  className="ms-2 bg-white border rounded-md focus:border-cyan-200"
                 >
                   <option>1</option>
                   <option>2</option>
