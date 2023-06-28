@@ -20,7 +20,7 @@ const Checkout = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="h-screen bg-miniAmazon-background">
+    <div className=" bg-miniAmazon-background pb-4">
       <div className="min-w-[1000px] m-auto pt-8">
         <div className="grid grid-cols-8 gap-10">
           {/*Products*/}
@@ -35,8 +35,7 @@ const Checkout = () => {
                         <Link to={`/product/${product.id}`}>
                           <img
                             className="p-4 m-auto"
-                            src={product.image_small}
-                            alt=""
+                            src={product.image}
                           />
                         </Link>
                       </div>
@@ -56,7 +55,7 @@ const Checkout = () => {
                         </div>
                         <div className="grid grid-cols-3 w-20 text-center ">
                           <div
-                            className="text-xl xl:text-2xl bg-gray-400 rounded cursor-pointer"
+                            className="text-xl xl:text-2xl bg-gray-300 rounded-s cursor-pointer"
                             onClick={() =>
                               dispatch(decrementInCart(product.id))
                             }
@@ -67,7 +66,7 @@ const Checkout = () => {
                             {product.quantity}
                           </div>
                           <div
-                            className="text-xl xl:text-2xl bg-gray-400 rounded cursor-pointer"
+                            className="text-xl xl:text-2xl bg-gray-300 rounded-e cursor-pointer"
                             onClick={() =>
                               dispatch(incrementInCart(product.id))
                             }

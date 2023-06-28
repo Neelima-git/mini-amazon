@@ -30,7 +30,7 @@ const SearchResults = () => {
   }, [searchParams]);
 
   return (
-    <div className="min-w-[1200px] max-w-[1300px] m-auto pt-4">
+    <div className="min-w-[1200px] max-w-[1300px] m-auto py-4">
       {products &&
         products.map((product, key) => {
           return (
@@ -39,7 +39,7 @@ const SearchResults = () => {
                 <div className="col-span-2 p-4 bg-gray-200">
                   <img
                     className="m-auto"
-                    src={product.image_small}
+                    src={product.image}
                     alt="Search result product"
                   />
                 </div>

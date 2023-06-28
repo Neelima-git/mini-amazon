@@ -45,10 +45,9 @@ const Search = () => {
       <div className="flex items-center h-10 bg-miniAmazon-yellow rounded">
         <select
           onChange={(e) => setCategory(e.target.value)}
-          className="p-[11px] pe-[0px] rounded-l text-black border text-xs xl:text-sm"
+          className="p-[9px] pe-8 rounded-l text-black border text-xs xl:text-sm"
         >
           <option>All</option>
-          <option>Amazon</option>
           <option>Fashion</option>
           <option>Computers</option>
           <option>Beauty</option>
