@@ -12,7 +12,7 @@ const Search = () => {
   const onHandleSubmit = (e) => {
     e.preventDefault();
 
-    if (category === "All") {
+    if (category === "All" && searchTerm === "" ) {
       // Navigate to home page
       navigate("/");
     } else {

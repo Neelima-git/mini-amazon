@@ -2,22 +2,47 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { ProductDetails } from "./";
 import { IN_CURRENCY } from "../utils/constants";
+import { selectCartProducts, selectCartProductsNumber, selectCartSubTotal } from "../redux/cartSelectors";
 import {
   decrementInCart,
   incrementInCart,
   removeFromCart,
+  clearCart,
 } from "../redux/cartSlice";
 
 const Checkout = () => {
-  const products = useSelector((state) => state.cart.products);
-  const itemsNumber = useSelector((state) => state.cart.productsNumber);
-  const subTotal = useSelector((state) =>
-    state.cart.products.reduce(
-      (subTotal, product) => subTotal + product.price * product.quantity,
-      0
-    )
-  );
+  const products = useSelector(selectCartProducts);
+  const itemsNumber = useSelector(selectCartProductsNumber);
+  const subTotal = useSelector(selectCartSubTotal);
+
   const dispatch = useDispatch();
+
+  const handleClearCart = () => {
+    dispatch(clearCart());
+  };
+
+  const renderDeliveryMessage = () => {
+    const remainingAmount = 499 - subTotal;
+    if (subTotal > 499) {
+      return (
+        <div className="text-xs xl:text-sm text-green-800 mb-2">
+          Your order qualifies for{" "}
+          <span className="font-bold">FREE DELIVERY</span>. Delivery Details
+        </div>
+      );
+    } else {
+      return (
+        <div className="text-xs xl:text-sm mb-2">
+          Add
+          <span className="text-red-600 p-1">
+            {IN_CURRENCY.format(remainingAmount)}
+          </span>
+           to your order to qualify for FREE Delivery.
+        </div>
+      );
+    }
+    return null;
+  };
 
   return (
     <div className=" bg-miniAmazon-background pb-4">
@@ -25,7 +50,15 @@ const Checkout = () => {
         <div className="grid grid-cols-8 gap-10">
           {/*Products*/}
           <div className="col-span-6 bg-white ">
-            <div className="text-2xl xl:text-3xl m-4">Shopping Cart</div>
+            <div className="flex justify-between pe-2">
+              <div className="text-2xl xl:text-3xl m-4">Shopping Cart</div>
+              <button
+                className="text-sm xl:text-base rounded text-red-600 mt-2 mb-1"
+                onClick={handleClearCart}
+              >
+                Clear Cart
+              </button>
+            </div>
             {products.map((product) => {
               return (
                 <div key={product.id}>
@@ -33,10 +66,7 @@ const Checkout = () => {
                     <div className="col-span-10 grid grid-cols-8 divide-y divide-gray-400">
                       <div className="col-span-2">
                         <Link to={`/product/${product.id}`}>
-                          <img
-                            className="p-4 m-auto"
-                            src={product.image}
-                          />
+                          <img className="p-4 m-auto" src={product.image} />
                         </Link>
                       </div>
                       <div className="col-span-6">
@@ -86,7 +116,7 @@ const Checkout = () => {
               );
             })}
             <div className="text-lg xl:text-xl text-right mb-4 mr-4">
-              Subtotal ( {itemsNumber} items):
+              Subtotal({itemsNumber} items):
               <span className="font-semibold">
                 {IN_CURRENCY.format(subTotal)}
               </span>
@@ -94,17 +124,14 @@ const Checkout = () => {
           </div>
           {/*Checkout*/}
           <div className="col-span-2 bg-white rounded h-[250px] p-2">
-            <div className="text-xs xl:text-sm text-green-800 mb-2">
-              Your order qualifies for
-              <span className="font-bold">FREE DELIVERY</span> .Delivery Details
-            </div>
+            {renderDeliveryMessage()}
             <div className="text-base xl:text-lg mb-4 mr-4">
               Subtotal ( {itemsNumber} items):
               <span className="font-semibold">
                 {IN_CURRENCY.format(subTotal)}
               </span>
             </div>
-            <Link to={`/billing?subtotal=${subTotal}`}>
+            <Link to={`/billing`}>
               <button className="btn">Proceed to Buy</button>
             </Link>
           </div>
