@@ -650,5 +650,113 @@
     "ratings": 345,
     "price": 14999.0,
     "oldPrice": 16999.0
-  }
+  },
+  "51": {
+    "id": 51,
+    "title": "Dyson V11 Animal Cordless Vacuum Cleaner",
+    "image": "../images/product_51.jpg",
+    "attribute": "Vacuum Cleaner",
+    "description": "Powerful cordless vacuum cleaner. Captures 99.97% of particles as small as 0.3 microns. Intelligent cleaning modes. Up to 60 minutes of fade-free suction.",
+    "brand": "Dyson",
+    "avgRating": 4.6,
+    "ratings": 958,
+    "price": 27999.0,
+    "oldPrice": 29999.0
+},
+"52": {
+    "id": 52,
+    "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "image": "../images/product_52.jpg",
+    "attribute": "Pressure Cooker",
+    "description": "7-in-1 multi-functional electric pressure cooker. Cooks up to 70% faster. 14 built-in smart programs. Large capacity for family meals.",
+    "brand": "Instant Pot",
+    "avgRating": 4.7,
+    "ratings": 1024,
+    "price": 8999.0,
+    "oldPrice": 9999.0
+},
+"53": {
+    "id": 53,
+    "title": "Nest Learning Thermostat",
+    "image": "../images/product_53.jpg",
+    "attribute": "Thermostat",
+    "description": "Smart thermostat that learns your schedule and adjusts the temperature accordingly. Wi-Fi enabled for remote control. Energy-saving features.",
+    "brand": "Nest",
+    "avgRating": 4.4,
+    "ratings": 782,
+    "price": 14999.0,
+    "oldPrice": 16999.0
+},
+"54": { 
+    "id": 54,
+    "title": "iRobot Roomba 960 Robot Vacuum",
+    "image": "../images/product_54.jpg",
+    "attribute": "Robot Vacuum",
+    "description": "Smart robot vacuum with advanced mapping and navigation. Cleans carpets and hard floors. Automatically recharges and resumes cleaning.",
+    "brand": "iRobot",
+    "avgRating": 4.5,
+    "ratings": 652,
+    "price": 35999.0,
+    "oldPrice": 37999.0
+},
+"55": {
+    "id": 55,
+    "title": "Ring Video Doorbell Pro",
+    "image": "../images/product_55.jpg",
+    "attribute": "Video Doorbell",
+    "description": "Advanced video doorbell with motion detection and two-way talk. Works with Alexa for voice control. Provides 1080p HD video and live view.",
+    "brand": "Ring",
+    "avgRating": 4.6,
+    "ratings": 925,
+    "price": 18999.0,
+    "oldPrice": 20999.0
+},
+"56": {
+    "id": 56,
+    "title": "Breville BES870XL Barista Express Espresso Machine",
+    "image": "../images/product_56.jpg",
+    "attribute": "Espresso Machine",
+    "description": "Semi-automatic espresso machine with built-in grinder. Achieve professional-quality coffee at home. 15-bar pump and thermocoil heating system.",
+    "brand": "Breville",
+    "avgRating": 4.8,
+    "ratings": 739,
+    "price": 31999.0,
+    "oldPrice": 33999.0
+},
+"57": {
+    "id": 57,
+    "title": "Philips Sonicare ProtectiveClean 6100 Electric Toothbrush",
+    "image": "../images/product_57.jpg",
+    "attribute": "Electric Toothbrush",
+    "description": "Electric toothbrush with pressure sensor and brushing modes. Removes up to 7x more plaque. Travel case included.",
+    "brand": "Philips",
+    "avgRating": 4.7,
+    "ratings": 564,
+    "price": 7999.0,
+    "oldPrice": 8999.0
+},
+"58": {
+    "id": 58,
+    "title": "Eufy RoboVac 30C MAX Robot Vacuum",
+    "image": "../images/product_58.jpg",
+    "attribute": "Robot Vacuum",
+    "description": "Quiet and efficient robot vacuum cleaner. BoostIQ technology for increased suction power. Boundary strips for customized cleaning areas.",
+    "brand": "Eufy",
+    "avgRating": 4.5,
+    "ratings": 678,
+    "price": 24999.0,
+    "oldPrice": 26999.0
+},
+"59": {
+    "id": 59,
+    "title": "Levoit Core 300 Air Purifier",
+    "image": "../images/product_59.jpg",
+    "attribute": "Air Purifier",
+    "description": "True HEPA air purifier for home. Captures 99.97% of airborne particles. Ultra-quiet operation. Ideal for allergies and pet owners.",
+    "brand": "Levoit",
+    "avgRating": 4.6,
+    "ratings": 785,
+    "price": 9999.0,
+    "oldPrice": 11999.0
+}
 }
