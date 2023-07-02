@@ -238,5 +238,37 @@
     {
         "id": 59, 
         "title": "Levoit Core 300 Air Purifier"
+    }, 
+    {
+        "id": 60, 
+        "title": "Samsung Galaxy S22 Ultra"
+    }, 
+    {
+        "id": 61, 
+        "title": "Google Pixel 6 Pro"
+    }, 
+    {
+        "id": 62, 
+        "title": "OnePlus 10 Pro"
+    }, 
+    {
+        "id": 63, 
+        "title": "Xiaomi Mi 12"
+    }, 
+    {
+        "id": 64, 
+        "title": "Sony Xperia 1 III"
+    }, 
+    {
+        "id": 65, 
+        "title": "LG Velvet 2 Pro"
+    }, 
+    {
+        "id": 66, 
+        "title": "Motorola Edge 30 Pro"
+    }, 
+    {
+        "id": 67, 
+        "title": "Huawei P50 Pro"
     }
 ]
